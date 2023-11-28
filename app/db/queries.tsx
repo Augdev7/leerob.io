@@ -9,8 +9,8 @@ import {
 
 let googleAuth = new auth.GoogleAuth({
   credentials: {
-    client_email: process.env.GOOGLE_CLIENT_EMAIL,
-    private_key: process.env.GOOGLE_PRIVATE_KEY,
+    clientId: process.env.GOOGLE_CLIENT_ID!,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
   },
   scopes: ['https://www.googleapis.com/auth/youtube.readonly'],
 });
